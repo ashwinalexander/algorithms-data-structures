@@ -17,5 +17,5 @@ def selection_sort(unsorted_array):
             unsorted_array[i], unsorted_array[index_of_lowest_value] = unsorted_array[index_of_lowest_value], unsorted_array[i]
     return unsorted_array
 
-array_to_sort = [23 ,6 ,8, 4 ,7 ,4 ,5,24,100,0, 9, 100042]
+array_to_sort = [23 ,6 ,8, 4,8,4,6,1,46,23]
 print(selection_sort(array_to_sort))
