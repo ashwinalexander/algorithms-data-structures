@@ -119,11 +119,12 @@ def get_two_products(arr_one, arr_two):
         for j in range(len(arr_two)):
             arr_product.append(arr_one[i]*arr_two[j])
     return arr_product
-
-# def password_hacker()
-
-
 # print(get_two_products([1,2,3],[10,100,1000]))
+
+
+
+
+
 
 
 
