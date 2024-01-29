@@ -56,9 +56,48 @@ def string_reversal_loop(test_string):
 
 # string_reversal_loop("blah")
 
+# Use recursion to reverse a string
 def string_reversal(test_string):
     if len(test_string) ==1:
         return test_string[0]
     return test_string[len(test_string)-1] + string_reversal(test_string[0:len(test_string)-1])
 
-print(string_reversal("abcd"))
+# print(string_reversal("abcd"))
+
+# count x's in a string using recursion
+def count_x_loop(test_string):
+    count = 0
+    for let in test_string:
+        if let == "x":
+            count +=1
+    return count
+
+def count_x(test_string):
+ if len(test_string) == 0:
+     return 0
+
+ if test_string[0] == "x":
+     return 1 + count_x(test_string[1: len(test_string)])
+ else:
+     return 0 + count_x(test_string[1: len(test_string)])
+
+# print(count_x("xasdhbhbhxbx"))
+
+
+# Solving the staircase problem using recursion
+# For n steps, how many pathways exist if someone can take 1, 2 or 3 steps at a time
+# I don't claim to understand fully how this works, it hurts my brain
+def staircase_problem(n):
+    print(n)
+    if n < 0:
+        return 0
+    if n == 1 or n == 0:
+        return 1
+
+    return staircase_problem(n-1) + staircase_problem(n-2) + staircase_problem(n-3)
+
+
+# print(staircase_problem(19))
+
+
+
