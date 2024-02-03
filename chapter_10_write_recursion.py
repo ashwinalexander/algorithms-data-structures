@@ -132,3 +132,11 @@ def triangular_nums(num_tri):
     return num_tri + triangular_nums(num_tri-1)
 
 
+def scotland_yard(str_x):
+    ''''return the location/index of "x" in the string. This is just like Scotland Yard'''
+    if str_x[0] != "x":
+        return 1 + scotland_yard(str_x[1:])
+    else:
+        return 0
+
+print(scotland_yard("abcdefghijklmnopqrstuvwxyz"))
