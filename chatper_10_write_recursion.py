@@ -98,6 +98,29 @@ def staircase_problem(n):
 
 
 # print(staircase_problem(19))
+#
+# # Create all possible anagrams using the characters in the input string
+# def generate_anagram(anagram_fodder):
+#     return
 
 
 
+# Exercise 1:
+def total_chars(arr_words):
+    if len(arr_words) == 0:
+        return 0
+    return len(arr_words[0]) + total_chars(arr_words[1:len(arr_words)])
+
+
+# print(total_chars(["av","c","d","dejee"]))
+
+# Exercise 2:
+def only_even_nums(arr_odd_even):
+   if len(arr_odd_even) == 0:
+       return []
+   if arr_odd_even[0] % 2 == 0:
+       return [arr_odd_even[0]] + only_even_nums(arr_odd_even[1:len(arr_odd_even)])
+   else:
+       return only_even_nums(arr_odd_even[1:len(arr_odd_even)])
+
+# print(only_even_nums([1,2,3,4,5]))
