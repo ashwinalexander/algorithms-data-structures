@@ -123,4 +123,12 @@ def only_even_nums(arr_odd_even):
    else:
        return only_even_nums(arr_odd_even[1:len(arr_odd_even)])
 
-# print(only_even_nums([1,2,3,4,5]))
+
+def triangular_nums(num_tri):
+    '''Generate the triangular number'''
+    '''Wow, this was easy'''
+    if num_tri == 0:
+        return 0
+    return num_tri + triangular_nums(num_tri-1)
+
+
