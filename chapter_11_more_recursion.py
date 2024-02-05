@@ -43,7 +43,7 @@ def scotland_yard(str_x):
 def unique_paths(row_count,col_count):
     '''Unique Path Problem - return all possible paths from the top left to the bottom right
     of a grid with row_count rows and col_count columns'''
-
+    print("hi")
     # ngl this was a bit of a mind-bender, I was not expecting two recursions but that makes sense.
     if row_count == 1 or col_count == 1:
         return 1
